@@ -39,6 +39,10 @@ console.log(arraWFunction);
 
 
 // With objects:
+
+/* Each student in  the array is an object with four properties:
+id, name, profession, and skill. My goal with the map  method is to iterate through the array of students  
+and return for each one an array containing their  name and their id. */
 const students = [
   {
     id: 1,
@@ -59,5 +63,10 @@ const students = [
     skill: 'CSS'
   },
 ];
-const studentsId = students.map(student => [{student.name, student.id}]);
+const studentsId = students.map(student => [student.name, student.id];
 console.log(studentsId);
+
+/* Instead of returning the student names  and ids as arrays, can you think of how  
+you might return them as objects with  the id and name properties still intact?  
+What if you wanted to add an  age property to each student  
+and return an array identical to the original,  but where each student has an age as well?  /*
